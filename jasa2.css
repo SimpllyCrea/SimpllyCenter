@@ -1,0 +1,99 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    padding-top: 20px; /* Menambahkan padding 20px di atas elemen <h1> */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 33px;
+}
+
+h2 {
+    color: black;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.semua-p {
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.bawah-p {
+    color: black;
+    margin-top: 30px;
+}
+
+.container1 {
+    max-width: 600px; /* Lebar maksimum kontainer */
+    margin: 0 auto; /* Memusatkan kontainer di tengah halaman */
+    margin-top: 20px;
+    padding: 20px; /* Padding di dalam kontainer */
+    background-color: #ececec; /* Warna latar belakang */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 10px 7px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.back-button {
+    position: absolute; /* Mengatur posisi absolut untuk tombol Kembali */
+    top: 0px; /* Jarak dari atas */
+    left: 0px; /* Jarak dari kiri */
+    padding: 5px 10px; /* Padding tombol */
+    background: none;
+    color: rgb(0, 0, 0); /* Warna teks tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut membulat pada tombol */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+    font-size: 27px;
+}
+
+.back-button:hover {
+    color: rgb(121, 121, 121);
+    background-color: #ececec; /* Warna latar belakang saat hover */
+}
+
+.checkout-button {
+    display: inline-block; /* Menampilkan tombol sebagai blok inline */
+    margin-top: 20px; /* Jarak atas dari konten */
+    padding: 10px 15px; /* Padding tombol */
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut membulat pada tombol */
+    width: 100%; /* Membuat tombol memenuhi lebar kontainer */
+    text-align: center; /* Memusatkan teks */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+.checkout-button:hover {
+    background-color: #218838; /* Warna latar belakang saat hover */
+}
+
+.fotooo {
+    width: 110%; /* Mengatur lebar gambar menjadi 100% dari kontainer */
+    max-width: 500px; /* Mengatur lebar maksimum gambar */
+    border-radius: 5px; /* Menambahkan sudut membulat jika diinginkan */
+    display: block; /* Mengubah gambar menjadi block element */
+    margin-left: auto; /* Margin kiri otomatis */
+    margin-right: auto; /* Margin kanan otomatis */
+    height: auto; /* Mempertahankan rasio aspek */
+}

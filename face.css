@@ -1,0 +1,186 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+h1 {
+    color: white;
+    padding-top: 20px; /* Menambahkan padding 20px di atas elemen <h1> */
+}
+
+/* Header */
+.header-container {
+    height: 20vh;
+    margin: 0;
+    background: linear-gradient(45deg, #161616, #5e5e5e, #383838,hsl(0, 0%, 66%));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.foto1 {
+    width: 50%; /* Mengatur lebar gambar menjadi 100% dari kontainer */
+    max-width: 500px; /* Mengatur lebar maksimum gambar */
+    border-radius: 5px; /* Menambahkan sudut membulat jika diinginkan */
+    display: block; /* Mengubah gambar menjadi block element */
+    margin-left: auto; /* Margin kiri otomatis */
+    margin-right: auto; /* Margin kanan otomatis */
+    height: auto; /* Mempertahankan rasio aspek */
+}
+
+.foto2 {
+    width: 40%; /* Mengatur lebar gambar menjadi 100% dari kontainer */
+    max-width: 150px; /* Mengatur lebar maksimum gambar */
+    border-radius: 5px; /* Menambahkan sudut membulat jika diinginkan */
+    display: block; /* Mengubah gambar menjadi block element */
+    margin-left: auto; /* Margin kiri otomatis */
+    margin-right: auto; /* Margin kanan otomatis */
+    height: auto; /* Mempertahankan rasio aspek */
+}
+
+.wm {
+    color: #000000;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Memusatkan ikon */
+}
+
+.social-icons a {
+    background: none; /* Menghapus latar belakang */
+    color: #000000; /* Warna ikon */
+    font-size: 24px; /* Ukuran ikon */
+    margin: 0 10px; /* Jarak antar ikon */
+    margin-top: 7px;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    padding: 10px; /* Tambahkan padding jika ingin area klik lebih besar */
+}
+
+.social-icons a:hover {
+    color: #666666; /* Warna saat hover */
+}
+
+.container1 {
+    max-width: 600px; /* Lebar maksimum kontainer */
+    margin: 0 auto; /* Memusatkan kontainer di tengah halaman */
+    padding: 20px; /* Padding di dalam kontainer */
+    background-color: #ececec; /* Warna latar belakang */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 10px 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.h2 {
+    color: #000000;
+}
+
+h4 {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h5 {
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.semua-p {
+    color: #000000;
+}
+
+footer {
+    height: 10vh;
+    background: linear-gradient(45deg, #000000, #5a5a5a, #313131,hsl(0, 0%, 53%));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    text-align: center;
+    padding: 10px 0; /* Padding atas dan bawah */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 10px 0 0; /* Margin atas 20px, margin bawah 0 */
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.container-jasa {
+    display: block; /* Pastikan kontainer ditampilkan sebagai blok */
+    max-width: 600px; /* Lebar maksimum kontainer */
+    margin: 20px auto; /* Margin atas dan bawah */
+    padding: 20px; /* Padding di dalam kontainer */
+    background-color: #ececec; /* Warna latar belakang */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 10px 7px 20px rgba(0, 0, 0, 0.1); /* Bayangan */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.container-jasa:hover {
+    transform: scale(1.05); /* Membesarkan kontainer saat di-hover */
+}
+
+.fotokontainer {
+    position: relative; /* Mengatur posisi relatif untuk deskripsi */
+}
+
+.fotokontainer img {
+    width: 100%; /* Membuat gambar memenuhi lebar kontainer */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+}
+
+.description {
+    position: absolute; /* Mengatur posisi absolut untuk menempatkan deskripsi di atas gambar */
+    bottom: 0; /* Menempatkan deskripsi di bagian bawah */
+    left: 0; /* Menempatkan deskripsi di sisi kiri */
+    right: 0; /* Menempatkan deskripsi di sisi kanan */
+    height: 20%; /* Tinggi deskripsi */
+    background-color: rgba(255, 255, 255, 0.699); /* Latar belakang deskripsi */
+    color: rgb(0, 0, 0); /* Warna teks deskripsi */
+    padding: 5px; /* Padding di dalam deskripsi */
+    text-align: center; /* Memusatkan teks */
+    backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
+}
+
+.harga1 {
+    margin-top: -5px;
+}
