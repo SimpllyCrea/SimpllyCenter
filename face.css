@@ -22,7 +22,7 @@ h1 {
 
 /* Header */
 .header-container {
-    height: 20vh;
+    height: 15vh;
     margin: 0;
     background: linear-gradient(45deg, #161616, #5e5e5e, #383838,hsl(0, 0%, 66%));
     background-size: 400% 400%;
